@@ -206,7 +206,7 @@ def pythonScraper(link):
             outfile.write(to_unicode(str_))
 
     exportData(reportScrape(link))
-    time.sleep(0.5)
+    time.sleep(0.8)
 
 
 def writeStop():
@@ -224,11 +224,12 @@ def currentPos():
 
 def do1000():
     dataJson = json.load(open('data.json'))
-    files = dataJson[(currentPos() * 1000):((currentPos() + 1) * 1000)]
+    currentPosition = currentPos()
+    files = dataJson[(currentPosition * 1000):((currentPosition + 1) * 1000)]
     for link in files:
         pythonScraper(link)
-        print('working')
     writeStop()
+    print('done at {}'.format(currentPosition))
 
 
 do1000()
