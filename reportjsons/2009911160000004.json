@@ -1,0 +1,124 @@
+[
+    {
+        "College/School": "Education",
+        "Course ID": "KIN315 (11160)",
+        "Grade-eligible enrollment": "102",
+        "Instructor": "Abraham, Lawrence D",
+        "Number of survey forms returns": "69",
+        "Organization": "Kinesiology",
+        "Semester": "Fall 2009"
+    },
+    {
+        "At this point in time, I feel that this course will be (or has already been) of value to me.": {
+            "Agree": "32",
+            "Average": "4.0",
+            "College/School Average": "4.4",
+            "Disagree": "2",
+            "Neutral": "10",
+            "Number of Respondents": "67",
+            "Organization Average": "4.4",
+            "Strongly Agree": "20",
+            "Strongly Disagree": "3",
+            "University Average": "4.2"
+        },
+        "The course was well organized.": {
+            "Agree": "33",
+            "Average": "4.4",
+            "College/School Average": "4.3",
+            "Disagree": "0",
+            "Neutral": "4",
+            "Number of Respondents": "69",
+            "Organization Average": "4.4",
+            "Strongly Agree": "32",
+            "Strongly Disagree": "0",
+            "University Average": "4.2"
+        },
+        "The instructor communicated information effectively.": {
+            "Agree": "34",
+            "Average": "4.2",
+            "College/School Average": "4.3",
+            "Disagree": "2",
+            "Neutral": "9",
+            "Number of Respondents": "69",
+            "Organization Average": "4.3",
+            "Strongly Agree": "24",
+            "Strongly Disagree": "0",
+            "University Average": "4.2"
+        },
+        "The instructor made me feel free to ask questions, disagree, and express my ideas.": {
+            "Agree": "32",
+            "Average": "4.4",
+            "College/School Average": "4.5",
+            "Disagree": "2",
+            "Neutral": "2",
+            "Number of Respondents": "69",
+            "Organization Average": "4.4",
+            "Strongly Agree": "33",
+            "Strongly Disagree": "0",
+            "University Average": "4.4"
+        },
+        "The instructor showed interest in the progress of students.": {
+            "Agree": "40",
+            "Average": "4.1",
+            "College/School Average": "4.4",
+            "Disagree": "4",
+            "Neutral": "6",
+            "Number of Respondents": "69",
+            "Organization Average": "4.4",
+            "Strongly Agree": "19",
+            "Strongly Disagree": "0",
+            "University Average": "4.3"
+        },
+        "The tests/assignments were usually graded and returned promptly.": {
+            "Agree": "34",
+            "Average": "4.3",
+            "College/School Average": "4.3",
+            "Disagree": "1",
+            "Neutral": "6",
+            "Number of Respondents": "69",
+            "Organization Average": "4.3",
+            "Strongly Agree": "28",
+            "Strongly Disagree": "0",
+            "University Average": "4.2"
+        }
+    },
+    {
+        "Overall, this course was": {
+            "Average": "3.4",
+            "College/School Average": "4.1",
+            "Excellent": "9",
+            "Number of respondents": "69",
+            "Organization Average": "4.1",
+            "Satisfactory": "28",
+            "University Average": "3.9",
+            "Unsatisfactory": "7",
+            "Very Good": "23",
+            "Very Unsatisfactory": "2"
+        },
+        "Overall, this instructor was": {
+            "Average": "3.8",
+            "College/School Average": "4.3",
+            "Excellent": "12",
+            "Number of respondents": "69",
+            "Organization Average": "4.3",
+            "Satisfactory": "18",
+            "University Average": "4.1",
+            "Unsatisfactory": "4",
+            "Very Good": "34",
+            "Very Unsatisfactory": "1"
+        }
+    },
+    {
+        "In my opinion, the workload in this course was": {
+            "Average": "N/A",
+            "College/School Average": "N/A",
+            "Excessive": "3",
+            "High": "20",
+            "Insufficient": "0",
+            "Light": "6",
+            "Number of respondents": "69",
+            "Organization Average": "N/A",
+            "University Average": "N/A"
+        }
+    }
+]
