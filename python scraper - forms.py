@@ -9,16 +9,21 @@ import requests
 import os.path
 
 cookies = {
+    'search_type':
+    'course',
+    'search_dept':
+    'ECO',
+    'search_course_num':
+    '329',
     'csrftoken-studentfinancials.mytuitionbill-Prod':
     '6kiZx7OERXh7GFHH9iUM0L9xvHiyYj9qKrJOgkOGVpZ4ZGZ3l5JuzhI93not7nXw',
     'ut_persist':
-    '1862707392.47873.0000',
+    '1879484608.47873.0000',
     '_shibsession_64656661756c7468747470733a2f2f75746469726563742e7574657861732e6564752f73686962626f6c657468':
-    '_6f947ee22ffa709b5e0ed972454f8656',
+    '_26b572c542daba8648dccd6a6baf3b9b',
     'SC':
-    'AQEBBwID6gIQRjg0MDZENTA4QjIxNDRBMgYkVkZMRjExS0YxZkZJSTFuMzF4VU8zeG1HZllVdnRLNVpsMW5CBAoxNjQyMDE2OTAyBQ8yMDkuMTY2LjEyMi4xOTcDB2JtbTM4ODYKAVkIgLKUtu9NpMs7BWV6ZRAGwxYCdJDg+fT7JlxLdjTWT4bOWj/if4867FVaCtxoOAAWRWhTp7+saOhouUJdkQ3x9ow9lk3oYvDc1ZCABMxonnxB7rFhaalw3F0V6vnSKh1BsFqnu46pJNP72wKG4cQYshQMeNFDBsIMi9aKLbvognxE',
+    'AQEBBwID6gIQRjg0MDZENTA4QjIxNDRBMgYkeWNhNGdaRFovb0pPMHl1T3hzVlhCTmtxZVpWODYycnRINmRaBAoxNjQyMTkwMzQzBQ8yMDkuMTY2LjEyMi4xODUDB2JtbTM4ODYKAVkIgByLUv3jBIfVJsYttGt94JrZLGgRXwnNap5l0Y04s+OpnLdBZmJi8J5FI451aVgyxIbEDC/Ti5qJQ24p6GD9VMtpI6j0yaKCvzOdU6jOniDAGhigc84+UR6samUIMcsY2xAJgLlbWFvLnpSHwfkffGTPxRNXtRYkgzlPDLrFOWnF',
 }
-
 headers = {
     'Connection': 'keep-alive',
     'Cache-Control': 'max-age=0',
@@ -222,14 +227,15 @@ def currentPos():
     return lastPlace
 
 
-def do1000():
+def do500():
     dataJson = json.load(open('data.json'))
     currentPosition = currentPos()
-    files = dataJson[(currentPosition * 1000):((currentPosition + 1) * 1000)]
+    files = dataJson[(currentPosition * 500):((currentPosition + 1) * 500)]
     for link in files:
         pythonScraper(link)
     writeStop()
-    print('done at {}'.format(currentPosition))
+    print('done at {}'.format(currentPosition + 1))
 
 
-do1000()
+for num in range(0, 20):
+    do500()
