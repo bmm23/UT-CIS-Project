@@ -9,20 +9,16 @@ import requests
 import os.path
 
 cookies = {
-    'search_type':
-    'course',
-    'search_dept':
-    'ECO',
-    'search_course_num':
-    '329',
     'csrftoken-studentfinancials.mytuitionbill-Prod':
     '6kiZx7OERXh7GFHH9iUM0L9xvHiyYj9qKrJOgkOGVpZ4ZGZ3l5JuzhI93not7nXw',
+    '_ga':
+    'GA1.2.929314697.1642619620',
     'ut_persist':
     '1879484608.47873.0000',
     '_shibsession_64656661756c7468747470733a2f2f75746469726563742e7574657861732e6564752f73686962626f6c657468':
-    '_26b572c542daba8648dccd6a6baf3b9b',
+    '_daf8aaacb422874ba139bcc589eb468b',
     'SC':
-    'AQEBBwID6gIQRjg0MDZENTA4QjIxNDRBMgYkeWNhNGdaRFovb0pPMHl1T3hzVlhCTmtxZVpWODYycnRINmRaBAoxNjQyMTkwMzQzBQ8yMDkuMTY2LjEyMi4xODUDB2JtbTM4ODYKAVkIgByLUv3jBIfVJsYttGt94JrZLGgRXwnNap5l0Y04s+OpnLdBZmJi8J5FI451aVgyxIbEDC/Ti5qJQ24p6GD9VMtpI6j0yaKCvzOdU6jOniDAGhigc84+UR6samUIMcsY2xAJgLlbWFvLnpSHwfkffGTPxRNXtRYkgzlPDLrFOWnF',
+    'AQEBBwID6gIQRjg0MDZENTA4QjIxNDRBMgYkRFlITGxmdXpReHZOSlJ6RFlYKzhqWFQyLzIyTHlJWUxRYWNJBAoxNjQyNzg5MzY4BQ8yMDkuMTY2LjEyMi4yMjQDB2JtbTM4ODYKAVkIgLaUgB5maz6yDZevLkcLqnVy+GxiFqAZeK2OorxOiUxTgNQoq9ekwMgk3rGUyBIaOuEN377wQ6NSDVN0NLD76EUWFyOV/55lVXv+QpUeyQOxMJqZNP0545p1U2JDPHgWU4qFKgrP0QPRJB8O31UtXv+d/SyiBMxEhRl8PZGQ/Taw',
 }
 headers = {
     'Connection': 'keep-alive',
@@ -234,8 +230,15 @@ def do500():
     for link in files:
         pythonScraper(link)
     writeStop()
-    print('done at {}'.format(currentPosition + 1))
+    print('done at {}'.format((currentPosition + 1) * 500))
 
 
-for num in range(0, 20):
-    do500()
+try:
+    print('program started')
+    for num in range(0, 20):
+        do500()
+except:
+    try:
+        print('Cookies expired, input fresh cookies')
+    except:
+        print('CIS crashed, try again tomorrow')
